@@ -1,0 +1,118 @@
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    min-height: 100vh;
+    padding: 140px 0 100px;
+
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: var(--max-width);
+}
+
+.eyebrow {
+    margin-bottom: 20px;
+
+    color: var(--accent);
+
+    font-size: 0.77rem;
+    font-weight: 600;
+
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    max-width: 900px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(3.5rem, 7vw, 6.6rem);
+    font-weight: 800;
+
+    line-height: 0.98;
+    letter-spacing: -0.065em;
+}
+
+.hero h1 span {
+    display: block;
+    color: var(--text-muted);
+}
+
+.hero-title {
+    margin-top: 38px;
+
+    color: var(--text-soft);
+
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.hero-description {
+    max-width: 710px;
+
+    margin-top: 18px;
+
+    color: var(--text-muted);
+
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-top: 36px;
+}
+
+.hero-meta {
+    display: flex;
+    gap: 70px;
+
+    margin-top: 72px;
+    padding-top: 26px;
+
+    border-top: 1px solid var(--border);
+}
+
+.hero-meta div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    color: var(--text-soft);
+
+    font-size: 0.9rem;
+}
+
+.meta-label {
+    color: var(--text-muted);
+
+    font-size: 0.74rem;
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.hero-glow {
+    position: absolute;
+    top: 6%;
+    right: -10%;
+
+    width: 520px;
+    height: 520px;
+
+    background: var(--accent-soft);
+    border-radius: 50%;
+
+    filter: blur(130px);
+    pointer-events: none;
+}

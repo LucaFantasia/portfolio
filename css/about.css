@@ -1,0 +1,157 @@
+.about-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 80px;
+    align-items: start;
+}
+
+.about-copy {
+    max-width: 560px;
+}
+
+.about-copy p {
+    margin-bottom: 22px;
+
+    color: var(--text-muted);
+
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.about-copy .about-lead {
+    color: var(--text);
+
+    font-family: "Manrope", sans-serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+
+    line-height: 1.55;
+    letter-spacing: -0.02em;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.education-card {
+    padding: 28px;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.education-card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+}
+
+.education-topline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    margin-bottom: 18px;
+
+    color: var(--text-muted);
+
+    font-size: 0.72rem;
+    font-weight: 600;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.education-card h3 {
+    margin-bottom: 4px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+
+    letter-spacing: -0.025em;
+}
+
+.education-institution {
+    color: var(--text-soft);
+
+    font-size: 0.92rem;
+    font-weight: 500;
+}
+
+.education-result {
+    display: inline-block;
+
+    margin-top: 14px;
+    padding: 5px 9px;
+
+    color: var(--accent);
+
+    background: var(--accent-soft);
+    border: 1px solid rgba(121, 167, 255, 0.15);
+    border-radius: 6px;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.education-description {
+    margin-top: 18px;
+
+    color: var(--text-muted);
+
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.interest-strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    margin-top: 70px;
+    padding-top: 28px;
+
+    border-top: 1px solid var(--border);
+}
+
+.interest-label {
+    color: var(--text-muted);
+
+    font-size: 0.72rem;
+    font-weight: 600;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.interest-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.interest-items span {
+    padding: 7px 11px;
+
+    color: var(--text-soft);
+
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+
+    font-size: 0.78rem;
+    font-weight: 500;
+}

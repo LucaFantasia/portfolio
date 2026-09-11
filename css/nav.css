@@ -1,0 +1,93 @@
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    background: rgba(11, 13, 16, 0.78);
+    border-bottom: 1px solid transparent;
+    backdrop-filter: blur(14px);
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.site-header.scrolled {
+    background: rgba(11, 13, 16, 0.94);
+    border-color: var(--border);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 76px;
+}
+
+.logo {
+    font-family: "Manrope", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    font-weight: 500;
+}
+
+.nav-links a {
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--text);
+}
+
+.nav-cv {
+    padding: 8px 15px;
+
+    color: var(--text) !important;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.nav-cv:hover {
+    border-color: var(--border-hover);
+}
+
+.nav-toggle {
+    display: none;
+
+    width: 36px;
+    height: 36px;
+
+    background: none;
+    border: 0;
+
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    display: block;
+
+    width: 22px;
+    height: 1px;
+
+    margin: 6px auto;
+
+    background: var(--text);
+}

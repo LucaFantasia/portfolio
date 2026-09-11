@@ -1,0 +1,52 @@
+.site-footer {
+    padding: 34px 0;
+
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+
+    font-size: 0.82rem;
+}
+
+.footer-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer-logo {
+    display: inline-block;
+
+    margin-bottom: 6px;
+
+    color: var(--text);
+
+    font-family: "Manrope", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 800;
+
+    letter-spacing: -0.04em;
+}
+
+.footer-logo span {
+    color: var(--accent);
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    text-align: right;
+}
+
+.footer-right a {
+    color: var(--text-soft);
+    white-space: nowrap;
+
+    transition: color 0.2s ease;
+}
+
+.footer-right a:hover {
+    color: var(--text);
+}
